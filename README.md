@@ -396,6 +396,3 @@ The project is a learning/full-stack microservices application. Before productio
 - Add correlation IDs, distributed tracing, centralized logs, metrics, and alerts.
 - Define and test financial rules for rounding, due amounts, penalties, reconciliation, and reporting.
 
-## Interview summary
-
-> I built a Daily Finance System with a React frontend and Spring Boot microservices. It covers registration, OTP verification, JWT-based login, customer profiles, plan eligibility, loan applications, EMI payments, fund management, and transaction reporting. The backend is split into Auth, Customer, Plan, Loan, Fund, Payment, and Transaction services, with PostgreSQL databases owned by the individual services. The React app calls the API Gateway, while Consul supports service discovery. Services communicate mainly through REST APIs. A key workflow is payment processing: the Payment Service validates the customer and loan, checks ownership, classifies the payment, coordinates updates with Fund and Loan services, stores the payment, and records the transaction. Important production improvements include idempotency, stronger authorization, secrets management, and reliable handling of cross-service failures.
